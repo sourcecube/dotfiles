@@ -78,7 +78,7 @@ font-1 = ${fonts.icondefault}
 ;font-3 = ${fonts.iconsolid}
 ;font-4 = ${fonts.iconregular}
 
-modules-left = i3 xbacklight pulseaudio date
+modules-left = i3 date xbacklight pulseaudio
 modules-center = xwindow
 modules-right = cpu memory filesystem wlan battery-combined
 
@@ -307,7 +307,7 @@ format-volume = <ramp-volume> <bar-volume>
 label-volume =  
 label-volume-foreground = ${root.foreground}
 
-label-muted = 
+label-muted =  
 label-muted-foreground = #666
 
 ramp-volume-0 = 
