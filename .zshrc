@@ -1,6 +1,10 @@
 # ZSH defaults
 setopt appendhistory autocd
 
+# Source aliases and functions
+source $HOME/.zsh_aliases
+source $HOME/.zsh_functions
+
 # zplug settings
 source /usr/share/zsh/scripts/zplug/init.zsh
 
@@ -29,22 +33,20 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
-# Run wal cache
-(cat ~/.cache/wal/sequences &)
 
-# Alias to set execute wal
-alias bw="wal -i ~/.config/wall.png"
+# Persist wal for new terminals
+(cat ~/.cache/wal/sequences &)
 
 # Default editor
 export VISUAL="vim"
 
 # Set terminal to urxvt or termite
-#export TERMINAL="termite"
+# export TERMINAL="termite"
 
 # Cowsay path
 export COWPATH=$HOME/.config/cowsay:/usr/share/cows
 # Add some fun to the shell
-#cowthink -f nyan weeeeeeeeeeeeeeeeeeeeeeeeeeee | lolcat
+# cowthink -f nyan weeeeeeeeeeeeeeeeeeeeeeeeeeee | lolcat
 figlet -f ansi_shadow Hellraiser| lolcat 
 
 # prompt settings
@@ -63,10 +65,4 @@ SPACESHIP_PROMPT_ORDER=(
   line_sep      # Line break
 )
 
-# Setup Git alias for dotfiles managemnet
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Function to scan for passed ssid
-function scanWifi() {
-	sudo iwlist wlp3s0 scan | grep -i $1
-}

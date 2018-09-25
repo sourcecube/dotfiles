@@ -1,0 +1,10 @@
+# Aliases to run apps on the dGPU
+alias nvidia="primusrun"
+alias pwrup="primusrun"
+alias dgpu="primusrun"
+
+# Setup Git alias for dotfiles managemnet
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Alias to set execute wal
+alias bw="wal -i ~/.config/wall.png"

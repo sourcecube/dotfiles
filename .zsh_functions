@@ -1,0 +1,4 @@
+# function to scan wifi for passed ssid
+function scanWifi() {
+  sudo iwlist wlp3s0 scan | grep -i $1
+}
