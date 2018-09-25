@@ -1,0 +1,12 @@
+chromium/
+autostart/
+dconf/
+gtk-3.0/
+htop/
+menus/
+pavucontrol.ini
+pulse/
+user-dirs.dirs
+user-dirs.locale
+wall.png
+*.pid

@@ -1,0 +1,7 @@
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.font: RobotoLight 26
+rofi.show-icons: false
+rofi.fullscreen: true
+rofi.lines: 6
+rofi.fixed-num-lines: true
+rofi.sidebar-mode: false
