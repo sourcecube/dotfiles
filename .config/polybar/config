@@ -82,8 +82,8 @@ modules-left = i3 date xbacklight pulseaudio
 modules-center = xwindow
 modules-right = cpu memory filesystem wlan battery-combined
 
-tray-position = right
-tray-padding = 2
+;tray-position = right
+;tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
 
