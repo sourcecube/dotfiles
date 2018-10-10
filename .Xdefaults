@@ -8,8 +8,8 @@ URxvt*font:           xft:Inconsolata\ for\ Powerline:Medium:pixelsize=:19:antia
 URxvt.font:           xft:Inconsolata\ for\ Powerline:Medium:pixelsize=19:antialias=true,xft:Symbola,xft:Font\ Awesome\ 5\ Pro,Font\ Awesome\ 5\ Pro\ Light:Light
 
 
-URxvt*boldFont:		xft:Inconsolata\ for\ Powerline:BoldForPowerline:pixelsize=19:antialias=true:Style=BoldForPowerline,xft=Symbola
-URxv.boldFont:		xft:Inconsolata\ for\ Powerline:BoldForPowerline:pixelsize=19:antialias=true:Style=BoldForPowerline, xft=Symbola
+URxvt*boldFont:		xft:Inconsolata\ for\ Powerline:BoldForPowerline:pixelsize=19:antialias=true,xft=Symbola
+URxv.boldFont:		xft:Inconsolata\ for\ Powerline:BoldForPowerline:pixelsize=19:antialias=true:,xft=Symbola
 
 ! Fix font space
 URxvt.letterSpace: 0

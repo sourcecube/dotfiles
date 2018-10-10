@@ -8,3 +8,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Alias to set execute wal
 alias bw="wal -i ~/.config/wall.png"
+
+# Set alias for languages
+alias rust="rustc"

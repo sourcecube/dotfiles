@@ -14,6 +14,7 @@ zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
+zplug "plugins/extract", from:oh-my-zsh
 
 # prezto
 zplug "modules/history-substring-search", from:prezto
@@ -66,3 +67,8 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 
+# better yaourt colors
+export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1    ;35"
+
+# Rust path
+export PATH="$HOME/.cargo/bin:$PATH"

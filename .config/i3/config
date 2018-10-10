@@ -213,7 +213,7 @@ assign [class="Chromium"] → $ws3
 gaps inner 20
 gaps outer 0
 
-bindsym $mod+q exec "i3lock -i $HOME/.config/wall.png"
+bindsym $mod+q exec --no-startup-id "i3lock -i $HOME/.config/wall.png"
 
 exec --no-startup-id "wal -R"
 

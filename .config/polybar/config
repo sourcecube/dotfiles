@@ -295,15 +295,17 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-foreground = ${colors.background}
+format-background = ${colors.primary}
 format-underline = #0a6cf5
+format-padding = 2
 
 label = %date%, %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <ramp-volume> <bar-volume>
+format-volume =  <bar-volume>
 label-volume =  
 label-volume-foreground = ${root.foreground}
 
