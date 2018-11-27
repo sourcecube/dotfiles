@@ -11,3 +11,6 @@ alias bw="wal -i ~/.config/wall.png"
 
 # Set alias for languages
 alias rust="rustc"
+
+# Helper aliases
+alias srczsh="source ~/.zshrc"

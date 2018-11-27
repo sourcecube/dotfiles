@@ -23,7 +23,9 @@ zplug "modules/history-substring-search", from:prezto
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # themes
-zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+#zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -52,9 +54,9 @@ figlet -f ansi_shadow Hellraiser| lolcat
 
 # prompt settings
 SPACESHIP_PROMPT_ORDER=(
-  time          # Time stampts section
-  user          # Username section
-  host          # Hostname section
+#  time          # Time stampts section
+#  user          # Username section
+#  host          # Hostname section
   dir           # Current directory section
   git           # Git section (git_branch + git_status)
   golang        # Go section
@@ -75,3 +77,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # pip path
 export PATH="$HOME/.local/bin:$PATH"
+
+# GoLang
+export PATH="/usr/local/go/bin:$PATH"

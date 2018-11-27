@@ -296,6 +296,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-foreground = ${colors.background}
+;format-foreground = #ffffff
 format-background = ${colors.primary}
 format-underline = #0a6cf5
 format-padding = 2
