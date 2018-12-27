@@ -80,7 +80,7 @@ font-1 = ${fonts.icondefault}
 
 modules-left = i3 date xbacklight pulseaudio
 modules-center = xwindow
-modules-right = cpu memory filesystem wlan battery-combined
+modules-right = vpn cpu memory filesystem wlan battery-combined
 
 ;tray-position = right
 ;tray-padding = 2
@@ -492,4 +492,8 @@ screenchange-reload = true
 margin-top = 5
 margin-bottom = 5
 
+[module/vpn]
+type=custom/script
+exec=$HOME/.config/polybar/scripts/vpn-status.sh
+interval=60
 ; vim:ft=dosini

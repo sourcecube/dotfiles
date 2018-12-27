@@ -1,9 +1,18 @@
-# function to scan wifi for passed ssid
-function scanWifi() {
-  if [ $1 ]
-  then
-    sudo iwlist wlp3s0 scan | grep -i $1
-  else
-    sudo iwlist wlp3s0 scan | grep -i ssid
-  fi 
+# wifi functions
+function wifiScan() {
+  nmcli device wifi list
+}
+
+function wifiConnect() {
+  nmcli device wifi connect "$1" password "$2"
+}
+
+function wifiInterface() {
+  sudo ip link set wlp3s0 $1
+}
+
+# system support functions
+function update() {
+  figlet -f small update system 
+  sudo pacman -Syu
 }

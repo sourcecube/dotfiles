@@ -14,3 +14,4 @@ alias rust="rustc"
 
 # Helper aliases
 alias srczsh="source ~/.zshrc"
+alias copy="xclip -sel clip"

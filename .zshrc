@@ -80,3 +80,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # GoLang
 export PATH="/usr/local/go/bin:$PATH"
+export GOPATH="$HOME/code/go"
+export PATH=$PATH:$(go env GOPATH)/bin
+# custom scripts
+export PATH="$HOME/.scripts:$PATH"
