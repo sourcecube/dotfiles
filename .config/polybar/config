@@ -495,5 +495,5 @@ margin-bottom = 5
 [module/vpn]
 type=custom/script
 exec=$HOME/.config/polybar/scripts/vpn-status.sh
-interval=60
+interval=15
 ; vim:ft=dosini
