@@ -16,3 +16,13 @@ function update() {
   figlet -f small update system 
   sudo pacman -Syu
 }
+
+function checkSum() {
+  checksum=$(sha256sum $1 | awk '{print $1}')
+  if [ $checksum = $2 ]; then
+    echo 'clean'
+  else
+    echo 'evil file'
+  fi;
+}
+
